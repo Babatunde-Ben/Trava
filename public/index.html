@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Trava</title>
   </head>
-  <body>
+  <body class="font-Montserrat">
     <header class="bg-red-200 h-12 w-full"></header>
-    <main class="sm:bg-green-50 md:bg-red-50 lg:bg-white font-sans">
+    <main class="sm:bg-green-50 md:bg-red-50 lg:bg-white">
       <!-- hero section -->
 
       <section
@@ -23,12 +23,14 @@
             package <br />
             delivery
           </h1>
-          <h3 class="text-secondary_2 w-11/12 text-lg leading-7 mb-5 sm:mb-7">
+          <h3
+            class="text-secondary_2 w-11/12 text-base leading-6 mb-5 sm:mb-7 sm:text-lg"
+          >
             A parcel delivery logistics app that links parckages and travelers
             together in one platform as they earn while at it
           </h3>
           <button
-            class="cta outline-none border-none py-3 px-5 bg-secondary_1 text-primary rounded font-bold uppercase text-center text-xs md:text-base md:px-6 hover:shadow-lg"
+            class="cta outline-none border-none py-3 px-5 bg-secondary_1 text-primary rounded font-semibold uppercase text-center text-xs md:text-base md:px-6 hover:shadow-lg"
           >
             Join Waitlist
           </button>
@@ -38,11 +40,10 @@
         >
           <img src="./images/IMG-20220315-WA0128.jpg" alt="" class="w-full" />
         </div>
-        <p
-          class="absolute top-5 right-3 text-red-700 font-bold z-10 md:right-0 md:static"
-        >
-          svg here
-        </p>
+        <img
+          src="./images//svgs/hero_svg.svg"
+          class="w-14 absolute top-8 right-10 text-red-700 font-bold z-10 md:right-0 md:static md:self-start"
+        />
       </section>
 
       <!-- what you stand to benefit -->
@@ -105,7 +106,7 @@
         <h2 class="text-center text-2xl capitalize text-primary font-bold mb-3">
           join the waitlist
         </h2>
-        <h4 class="text-primary text-center text-lg mb-8">
+        <h4 class="text-primary text-center text-lg mb-8 font-light">
           Be the first to know about our launch
         </h4>
 
@@ -118,7 +119,7 @@
 
           <button
             type="submit"
-            class="bg-primary h-10 px-6 outline-none border-none font-bold capitalize text-secondary_1 text-base rounded-md hover:bg-gray-200 transition duration-300"
+            class="bg-primary w-60 h-10 px-6 outline-none border-none font-bold capitalize text-secondary_1 text-base rounded-md hover:bg-gray-200 transition duration-300"
           >
             join waitlist
           </button>
@@ -127,13 +128,13 @@
     </main>
 
     <footer
-      class="footer main-padding py-7 bg-secondary_2 flex flex-wrap gap-x-5 gap-y-6 justify-center"
+      class="footer main-padding py-7 bg-secondary_3 flex flex-wrap gap-x-5 gap-y-6 justify-center"
     >
       <div>
         <img
-          src="./images/default-logo.png"
+          src="./images/svgs/Trava_logo_white.svg"
           alt="Trava-logo"
-          class="text-center mx-auto"
+          class="text-center mx-auto mb-3 w-36"
         />
       </div>
       <div>

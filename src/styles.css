@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,8 +38,8 @@ input::placeholder {
   @apply w-64 text-center;
 }
 .footer div li {
-  @apply mb-1 capitalize text-primary;
+  @apply mb-1 capitalize text-primary font-light text-sm;
 }
 .footer-subtitle {
-  @apply uppercase font-bold text-primary mb-2;
+  @apply uppercase font-semibold text-primary mb-2 text-base;
 }
