@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-padding {
+  @apply px-4 sm:px-7 md:px-10 lg:px-12;
+}
+.arrow {
+  @apply w-[5px] h-[5px] inline-block border-secondary_1 border-r border-b -rotate-45 -translate-y-[2px];
+}
+.cards {
+  @apply px-2 sm:w-72 md:w-72;
+}
+.cards div:nth-child(1) {
+  @apply w-full h-64  rounded-xl shadow-xl mb-7;
+}
+.cards .subtitle {
+  @apply text-lg font-bold text-secondary_1 mb-2 text-center md:text-left;
+}
+
+.cards .desc {
+  @apply text-secondary_2 mb-2 text-center leading-relaxed text-xs md:text-left md:text-sm md:leading-relaxed;
+}
+
+.cards .btn {
+  @apply font-semibold text-secondary_1 capitalize text-center mx-auto text-sm cursor-pointer inline-block relative left-1/2 -translate-x-1/2 md:static md:text-left md:translate-x-0;
+}
+
+.input {
+  @apply border border-primary w-60 h-10 bg-transparent outline-none px-3 text-primary;
+}
+input::placeholder {
+  @apply text-gray-400 capitalize;
+}
+.footer div {
+  @apply w-64 text-center;
+}
+.footer div li {
+  @apply mb-1 capitalize text-primary;
+}
+.footer-subtitle {
+  @apply uppercase font-bold text-primary mb-2;
+}
