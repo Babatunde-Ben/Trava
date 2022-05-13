@@ -21,9 +21,21 @@ btn.forEach((item) => {
   });
 });
 
+// Regex for validation
+let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+// actions on form submit
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("form submited");
-});
+  const name = form["name"].value;
+  const email = form["email"].value;
 
-// var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  // form validation
+  if (name == "") {
+    console.log(`name is invalid`);
+  } else if (!email.match(pattern)) {
+    console.log(`email is invalid`);
+  } else {
+    alert("form submited");
+  }
+});

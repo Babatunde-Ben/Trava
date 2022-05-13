@@ -11,7 +11,7 @@
   @apply w-[5px] h-[5px] inline-block border-secondary_1 border-r border-b -rotate-45 -translate-y-[2px];
 }
 .cards {
-  @apply px-2 sm:w-72 md:w-72;
+  @apply px-2 sm:w-72 lg:w-80;
 }
 .cards div:nth-child(1) {
   @apply w-full h-64  rounded-xl shadow-xl mb-7;
