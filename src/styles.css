@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    /* background-color: red; */
+  html {
+    -webkit-tap-highlight-color: transparent;
   }
 }
 .main-padding {

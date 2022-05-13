@@ -36,6 +36,10 @@ form.addEventListener("submit", (e) => {
   } else if (!email.match(pattern)) {
     console.log(`email is invalid`);
   } else {
-    alert("form submited");
+    swal({
+      title: "Successfully submitted",
+      icon: "success",
+      button: "Ok",
+    });
   }
 });
