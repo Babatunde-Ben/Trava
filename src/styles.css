@@ -8,6 +8,13 @@
   html {
     -webkit-tap-highlight-color: transparent;
   }
+  .input:-webkit-autofill,
+  .input:-webkit-autofill:hover,
+  .input:-webkit-autofill:focus,
+  .input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #17123b inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
 }
 .main-padding {
   @apply px-4 sm:px-7 md:px-10 lg:px-12;

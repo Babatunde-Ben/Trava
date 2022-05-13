@@ -41,5 +41,6 @@ form.addEventListener("submit", (e) => {
       icon: "success",
       button: "Ok",
     });
+    form.reset();
   }
 });
