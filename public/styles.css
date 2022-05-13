@@ -611,8 +611,8 @@ html {
   width: 8rem;
 }
 
-.w-60{
-  width: 15rem;
+.w-56{
+  width: 14rem;
 }
 
 .w-36{
@@ -988,14 +988,16 @@ html {
 }
 
 .input{
-  height: 2.5rem;
-  width: 15rem;
+  height: 2.25rem;
+  width: 14rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   background-color: transparent;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   outline: 2px solid transparent;
@@ -1172,11 +1174,6 @@ input::placeholder{
   .md\:bg-red-50{
     --tw-bg-opacity: 1;
     background-color: rgb(254 242 242 / var(--tw-bg-opacity));
-  }
-
-  .md\:object-left-top{
-    -o-object-position: left top;
-       object-position: left top;
   }
 
   .md\:object-left{
