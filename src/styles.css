@@ -15,6 +15,9 @@
     -webkit-box-shadow: 0 0 0 30px #17123b inset !important;
     -webkit-text-fill-color: #ffffff !important;
   }
+  .custom-shadow {
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  }
 }
 .main-padding {
   @apply px-4 sm:px-7 md:px-10 lg:px-12;
@@ -23,10 +26,13 @@
   @apply w-[5px] h-[5px] inline-block border-secondary_1 border-r border-b -rotate-45 -translate-y-[2px];
 }
 .cards {
-  @apply px-2 sm:w-72 lg:w-80;
+  @apply px-2 w-72 lg:w-80;
 }
 .cards div:nth-child(1) {
-  @apply w-full h-64  rounded-xl shadow-xl mb-7;
+  @apply w-full h-44  rounded-xl overflow-hidden custom-shadow mb-7 md:h-44 lg:h-48;
+}
+.cards div:nth-child(1) img {
+  @apply w-full h-full object-cover;
 }
 .cards .subtitle {
   @apply text-lg font-bold text-secondary_1 mb-2 text-center md:text-left;
