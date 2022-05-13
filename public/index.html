@@ -102,7 +102,7 @@
       </section>
 
       <!-- waitlist section -->
-      <section class="waitlist main-padding bg-secondary_1 py-10">
+      <section class="waitlist main-padding bg-secondary_1 py-24">
         <h2 class="text-center text-2xl capitalize text-primary font-bold mb-3">
           join the waitlist
         </h2>
@@ -112,14 +112,20 @@
 
         <form
           action=""
-          class="waitlist-form flex flex-col gap-5 justify-center items-center"
+          class="waitlist-form flex flex-col gap-5 justify-center items-center md:flex-row"
+          novalidate
         >
           <input type="text" placeholder="your name" class="input" />
-          <input type="email" placeholder="email address" class="input" />
+          <input
+            type="email"
+            placeholder="email address"
+            class="input"
+            maxlength="70"
+          />
 
           <button
             type="submit"
-            class="bg-primary w-60 h-10 px-6 outline-none border-none font-bold capitalize text-secondary_1 text-base rounded-md hover:bg-gray-200 transition duration-300"
+            class="bg-primary w-60 h-10 px-6 outline-none border-none font-bold capitalize text-secondary_1 text-base rounded-md hover:bg-gray-200 transition duration-300 md:w-48"
           >
             join waitlist
           </button>

@@ -681,6 +681,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
 }
 
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1064,6 +1069,18 @@ input::placeholder{
 
   .md\:w-\[35rem\]{
     width: 35rem;
+  }
+
+  .md\:w-52{
+    width: 13rem;
+  }
+
+  .md\:w-10{
+    width: 2.5rem;
+  }
+
+  .md\:w-48{
+    width: 12rem;
   }
 
   .md\:flex-row{

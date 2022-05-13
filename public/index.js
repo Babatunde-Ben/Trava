@@ -25,3 +25,5 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   alert("form submited");
 });
+
+// var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
