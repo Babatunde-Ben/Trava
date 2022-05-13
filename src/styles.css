@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    /* background-color: red; */
+  }
+}
 .main-padding {
   @apply px-4 sm:px-7 md:px-10 lg:px-12;
 }
@@ -34,6 +39,10 @@
 input::placeholder {
   @apply text-gray-400 capitalize;
 }
+.svg {
+  @apply absolute;
+}
+
 .footer div {
   @apply w-64 text-center;
 }
