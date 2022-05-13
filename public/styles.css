@@ -551,12 +551,12 @@ html {
   margin-bottom: 0.75rem;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
-}
-
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .flex{
@@ -611,8 +611,8 @@ html {
   width: 8rem;
 }
 
-.w-56{
-  width: 14rem;
+.w-40{
+  width: 10rem;
 }
 
 .w-36{
@@ -644,8 +644,8 @@ html {
   justify-content: center;
 }
 
-.gap-5{
-  gap: 1.25rem;
+.gap-6{
+  gap: 1.5rem;
 }
 
 .gap-y-9{
@@ -765,11 +765,6 @@ html {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-extrabold{
@@ -988,14 +983,15 @@ html {
 }
 
 .input{
-  height: 2.25rem;
+  height: 2.75rem;
   width: 14rem;
+  border-radius: 0.25rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   background-color: transparent;
-  padding-left: 0.75rem;
   padding-right: 0.75rem;
+  padding-left: 1.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
@@ -1004,20 +1000,22 @@ html {
   outline-offset: 2px;
 }
 
+.invalid{
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
 input::-moz-placeholder{
-  text-transform: capitalize;
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 input:-ms-input-placeholder{
-  text-transform: capitalize;
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 input::placeholder{
-  text-transform: capitalize;
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
@@ -1140,6 +1138,10 @@ input::placeholder{
 
   .md\:mt-24{
     margin-top: 6rem;
+  }
+
+  .md\:mt-0{
+    margin-top: 0px;
   }
 
   .md\:w-\[35rem\]{

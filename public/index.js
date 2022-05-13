@@ -27,15 +27,20 @@ let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 // actions on form submit
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const name = form["name"].value;
-  const email = form["email"].value;
+  const name = form["name"];
+  const email = form["email"];
 
   // form validation
-  if (name == "") {
-    console.log(`name is invalid`);
-  } else if (!email.match(pattern)) {
-    console.log(`email is invalid`);
+  if (name.value == "") {
+    name.classList.add("invalid");
   } else {
+    name.classList.remove("invalid");
+  }
+
+  if (!email.value.match(pattern) || email.value == "") {
+    email.classList.add("invalid");
+  } else {
+    email.classList.remove("invalid");
     swal({
       title: "Successfully submitted",
       icon: "success",
