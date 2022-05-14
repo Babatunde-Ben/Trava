@@ -15,9 +15,9 @@
     <title>Trava</title>
   </head>
   <body class="font-Montserrat">
-    <header id="home" class="relative w-full p-3 bg-red-400">
+    <header id="home" class="relative w-full p-3">
       <nav class="flex items-center flex-wrap">
-        <a href="#" class="mr-4 inline-flex bg-gray-100">
+        <a href="#" class="mr-4 inline-flex">
           <img
             src="./images/svgs/Trava-logo.svg"
             alt="Trava-logo"
@@ -26,6 +26,7 @@
         </a>
         <button
           class="inline-flex p-2 cursor-pointer hover:bg-gray-500 lg:hidden ml-auto nav-toggler"
+          id="open-btn"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -43,22 +44,34 @@
           </svg>
         </button>
         <div
-          class="top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto bg-blue-300"
+          class="top-nav fixed h-[100vh] w-[100vw] z-40 top-0 left-0 filter backdrop-filter backdrop-blur-sm backdrop-brightness-75 lg:inline-flex lg:flex-grow lg:w-auto lg:h-auto lg:static lg:backdrop-blur-none lg:bg-blue-200 hidden"
           id="navigation"
         >
           <div
-            class="text-center flex flex-col lg:inline-flex lg:flex-row lg:ml-auto bg-green-300"
+            class="absolute right-7 top-6 w-72 px-4 py-6 bg-primary rounded-md flex flex-col lg:inline-flex lg:flex-row lg:ml-auto lg:static lg:bg-transparent"
           >
-            <a
-              href="#"
-              class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-200"
-              ><span>Home</span></a
+            <a href="#" class="nav-links"><span>Home</span></a>
+            <a href="#" class="nav-links"><span>Features</span></a>
+            <hr class="lg:hidden w-full mx-auto inline-block" />
+            <button class="absolute top-5 right-5 p-2 lg:hidden" id="close-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="#4b5563"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button
+              class="cta outline-none border-none py-3 px-0 mt-6 inline-block bg-secondary_1 text-primary rounded-md font-semibold uppercase text-center text-xs md:text-sm md:px-0 shadow-md hover:shadow-lg"
             >
-            <a
-              href="#"
-              class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-200"
-              ><span>Features</span></a
-            >
+              Join waitlist
+            </button>
           </div>
         </div>
       </nav>
