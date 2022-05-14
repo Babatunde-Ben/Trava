@@ -4,45 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17123b" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="./images/svgs/Trava_logo_icon.svg"
+      href="./images/svgs/Trava-logo-icon.svg"
     />
 
     <title>Trava</title>
   </head>
   <body class="font-Montserrat">
-    <header class="bg-red-200 h-12 w-full"></header>
+    <header
+      id="home"
+      class="relative bg-gray-600 h-12 w-full text-center text-primary font-bold leading-loose"
+    >
+      <p>This is the header section</p>
+      <img
+        src="./images/svgs/blob.svg"
+        class="absolute -top-2 -left-7 w-72 sm:w-[25rem] sm:-top-10 sm:-left-5 md:w-[30rem] lg:w-[30rem]"
+      />
+    </header>
     <main class="sm:bg-green-50 md:bg-red-50 lg:bg-white">
       <!-- hero section -->
 
       <section
-        class="main-padding hero-section flex flex-col gap-y-9 relative py-7 md:flex-row md:gap-x-3"
+        class="main-padding mb-5 hero-section flex flex-col gap-y-9 relative py-7 md:flex-row md:gap-x-3 justify-center"
       >
         <article class="max-w-xl lg:max-w-3xl">
           <h1
-            class="text-secondary_1 text-4xl leading-[2.7rem] font-extrabold mb-4 sm:text-6xl sm:leading-[4.7rem] sm:mb-5"
+            class="text-secondary_1 text-4xl leading-[3.2rem] font-extrabold mb-4 sm:text-5xl sm:leading-[4.2rem] sm:mb-5 md:text-6xl md:leading-[4.7rem]"
           >
             Empowering <br />
             package <br />
             delivery
           </h1>
           <h3
-            class="text-secondary_2 w-11/12 text-base leading-6 mb-5 sm:mb-7 sm:text-lg"
+            class="text-secondary_2 w-4/5 text-base leading-6 md:leading-7 sm:w-11/12 mb-5 sm:mb-7"
           >
-            A parcel delivery logistics app that links parckages and travelers
-            together in one platform as they earn while at it
+            A parcel delivery and logistics app that links travelers with
+            parcels heading(destined) their way and also with independant hub
+            serving as drop-off and pickup points
           </h3>
           <button
-            class="cta outline-none border-none py-3 px-5 bg-secondary_1 text-primary rounded font-semibold uppercase text-center text-xs md:text-base md:px-6 hover:shadow-lg"
+            class="cta outline-none border-none py-3 px-5 bg-secondary_1 text-primary rounded-md font-semibold uppercase text-center text-xs md:text-base md:px-6 md:rounded-xl hover:shadow-lg"
           >
             Join Waitlist
           </button>
         </article>
         <div
-          class="w-4/5 h-80 mx-auto custom-shadow 0 rounded-2xl relative md:w-[35rem] md:mx-0 md:my-auto overflow-hidden"
+          class="w-4/5 h-80 mx-auto custom-shadow 0 rounded-2xl relative md:min-w-[15rem] md:mx-0 md:my-auto overflow-hidden lg:h-96 lg:w-96 lg:min-w-[22rem]"
         >
           <img
             src="./images/Trava.jpg"
@@ -51,20 +62,20 @@
           />
         </div>
         <img
-          src="./images//svgs/hero_svg.svg"
-          class="w-14 absolute top-8 right-10 text-red-700 font-bold z-10 md:right-0 md:static md:self-start"
+          src="./images//svgs/hero-svg.svg"
+          class="w-14 absolute top-8 right-3 text-red-700 font-bold z-10 sm:right-10 md:right-0 md:static md:self-start md:translate-y-8"
         />
       </section>
 
       <!-- what you stand to benefit -->
-      <section class="main-padding py-7 mb-10 h-auto">
+      <section id="features" class="main-padding py-7 mb-10 h-auto">
         <h2
-          class="text-2xl text-secondary_1 font-bold text-center mb-10 md:text-3xl"
+          class="text-xl text-secondary_1 font-extrabold text-center mb-10 md:text-3xl"
         >
           What you stand to benefit
         </h2>
         <div
-          class="flex flex-col gap-y-5 px-5 sm:flex-row sm:flex-wrap justify-center items-center md:flex-nowrap md:px-0 sm:gap-7 md:gap-2 lg:gap-7 lg:px-6"
+          class="flex flex-col gap-y-10 px-5 justify-center items-center sm:flex-row sm:flex-wrap sm:items-start md:justify-center md:flex-nowrap md:px-0 sm:gap-7 md:gap-2 lg:gap-7 lg:px-6"
         >
           <div class="cards">
             <div class="">
@@ -117,16 +128,19 @@
       </section>
 
       <!-- waitlist section -->
-      <section class="waitlist main-padding relative bg-secondary_1 py-24">
+      <section
+        id="waitlist"
+        class="waitlist main-padding relative bg-secondary_1 py-24"
+      >
         <img
-          src="./images//svgs/dotted rectangle.svg"
+          src="./images//svgs/dotted-rectangle.svg"
           alt=""
           class="svg w-20 top-10 right-5 sm:w-28 sm:right-10 lg:w-36 lg:right-20"
         />
         <img
-          src="./images//svgs/dotted rectangle.svg"
+          src="./images//svgs/dotted-rectangle.svg"
           alt=""
-          class="svg hidden lg:block top-64 w-32"
+          class="svg hidden lg:block top-[17rem] w-28"
         />
         <img
           src="./images//svgs/circles.svg"
@@ -165,7 +179,7 @@
 
           <button
             type="submit"
-            class="bg-primary w-40 h-10 mt-5 px-6 outline-none border-none font-bold capitalize text-secondary_1 text-base rounded-md hover:bg-gray-200 transition duration-300 md:w-48 md:mt-0"
+            class="bg-primary w-40 h-10 mt-2 px-6 outline-none border-none font-bold capitalize text-secondary_1 text-base rounded-md hover:bg-gray-200 transition duration-300 md:w-48 md:mt-0"
           >
             join waitlist
           </button>
@@ -174,13 +188,13 @@
     </main>
 
     <footer
-      class="footer main-padding py-7 bg-secondary_3 flex flex-wrap gap-x-5 gap-y-6 justify-center"
+      class="footer main-padding py-10 bg-primary flex flex-wrap gap-x-5 gap-y-2 justify-center md:gap-y-6 md:py-12"
     >
-      <div>
+      <div class="mb-4 sm:mb-0">
         <img
-          src="./images/svgs/Trava_logo_white.svg"
+          src="./images/svgs/Trava-logo-gray.svg"
           alt="Trava-logo"
-          class="text-center mx-auto mb-3 w-36"
+          class="text-center mx-auto mb-3 w-32 sm:-translate-y-5"
         />
       </div>
       <div>
@@ -201,7 +215,7 @@
         </ul>
       </div>
 
-      <p class="text-gray-200 text-center mt-5 w-full">
+      <p class="text-secondary_2 text-center mt-2 w-full font-light">
         &copy; 2022 Trava - All Right Reserved
       </p>
     </footer>

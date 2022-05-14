@@ -20,7 +20,7 @@
   }
 }
 .main-padding {
-  @apply px-4 sm:px-7 md:px-10 lg:px-12;
+  @apply px-4 sm:px-7 md:px-10 lg:px-16;
 }
 .arrow {
   @apply w-[5px] h-[5px] inline-block border-secondary_1 border-r border-b -rotate-45 -translate-y-[2px];
@@ -63,8 +63,8 @@ input::placeholder {
   @apply w-64 text-center;
 }
 .footer div li {
-  @apply mb-1 capitalize text-primary font-light text-sm;
+  @apply mb-3 capitalize text-secondary_2 font-light text-sm;
 }
 .footer-subtitle {
-  @apply uppercase font-semibold text-primary mb-2 text-base;
+  @apply uppercase font-medium text-secondary_2 mb-2 text-base;
 }
