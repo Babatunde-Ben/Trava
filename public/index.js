@@ -1,19 +1,22 @@
 const btn = document.querySelectorAll(".cards .btn");
 const cta = document.querySelector(" .cta");
 const form = document.querySelector(".waitlist-form");
-
-// pass element as a parameter to windowScroll function
-// or pass data-id
+const waitlistSection = document.getElementById("waitlist");
 
 function windowScroll() {
   window.scrollTo({
-    top: 0,
+    top: waitlistSection.offsetTop - 50,
     left: 0,
   });
 }
 
 cta.addEventListener("click", () => {
-  windowScroll();
+  // windowScroll();
+  swal({
+    title: "working",
+    icon: "success",
+    button: "Ok",
+  });
 });
 btn.forEach((item) => {
   item.addEventListener("click", () => {
