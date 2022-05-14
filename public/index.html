@@ -15,17 +15,60 @@
     <title>Trava</title>
   </head>
   <body class="font-Montserrat">
-    <header
-      id="home"
-      class="relative bg-gray-600 h-12 w-full text-center text-primary font-bold leading-loose"
-    >
-      <p>This is the header section</p>
+    <header id="home" class="relative w-full p-3 bg-red-400">
+      <nav class="flex items-center flex-wrap">
+        <a href="#" class="mr-4 inline-flex bg-gray-100">
+          <img
+            src="./images/svgs/Trava-logo.svg"
+            alt="Trava-logo"
+            class="w-28"
+          />
+        </a>
+        <button
+          class="inline-flex p-2 cursor-pointer hover:bg-gray-500 lg:hidden ml-auto nav-toggler"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="#17123b"
+            viewBox="0 0 24 24"
+            stroke="#17123b"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <div
+          class="top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto bg-blue-300"
+          id="navigation"
+        >
+          <div
+            class="text-center flex flex-col lg:inline-flex lg:flex-row lg:ml-auto bg-green-300"
+          >
+            <a
+              href="#"
+              class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-200"
+              ><span>Home</span></a
+            >
+            <a
+              href="#"
+              class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-200"
+              ><span>Features</span></a
+            >
+          </div>
+        </div>
+      </nav>
+
       <img
         src="./images/svgs/blob.svg"
-        class="absolute -top-2 -left-7 w-72 sm:w-[25rem] sm:-top-10 sm:-left-5 md:w-[30rem] lg:w-[30rem]"
+        class="absolute -top-2 -left-7 w-72 sm:w-[25rem] sm:-top-10 sm:-left-5 md:w-[30rem] lg:w-[30rem] -z-10"
       />
     </header>
-    <main class="sm:bg-green-50 md:bg-red-50 lg:bg-white">
+    <main class="sm:bg-green-50 md:bg-red-50 lg:bg-transparent">
       <!-- hero section -->
 
       <section
@@ -47,7 +90,7 @@
             serving as drop-off and pickup points.
           </h3>
           <button
-            class="cta outline-none border-none py-3 px-5 bg-secondary_1 text-primary rounded-md font-semibold uppercase text-center text-xs md:text-base md:px-6 md:rounded-xl hover:shadow-lg"
+            class="cta outline-none border-none py-3 px-5 bg-secondary_1 text-primary rounded-md font-semibold uppercase text-center text-xs md:text-base md:px-6 md:rounded-xl shadow-md hover:shadow-lg"
           >
             Join Waitlist
           </button>
@@ -180,10 +223,14 @@
           />
 
           <button
+            name="submit"
             type="submit"
-            class="bg-primary w-40 h-10 mt-2 px-6 outline-none border-none font-bold capitalize text-secondary_1 text-base rounded-md hover:bg-gray-200 transition duration-300 md:w-48 md:mt-0"
+            class="bg-white w-40 h-10 mt-2 px-6 outline-none border-none font-bold capitalize text-secondary_1 text-base rounded-md transition duration-300 md:w-48 md:mt-0"
           >
             join waitlist
+            <!-- <div
+              class="w-5 h-5 border-2 border-secondary_2 border-b-transparent rounded-full mx-auto animate-spin"
+            ></div> -->
           </button>
         </form>
       </section>

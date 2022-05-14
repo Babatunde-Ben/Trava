@@ -12,11 +12,6 @@ function windowScroll() {
 
 cta.addEventListener("click", () => {
   windowScroll();
-  swal({
-    title: "working",
-    icon: "success",
-    button: "Ok",
-  });
 });
 btn.forEach((item) => {
   item.addEventListener("click", () => {
@@ -32,6 +27,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const name = form["name"];
   const email = form["email"];
+  const submitBtn = form["submit"];
 
   // form validation
 
@@ -45,11 +41,19 @@ form.addEventListener("submit", (e) => {
 
     email.classList.remove("invalid");
 
-    swal({
-      title: "Successfully submitted",
-      icon: "success",
-      button: "Ok",
-    });
-    form.reset();
+    submitBtn.innerHTML = `<div
+    class="w-5 h-5 border-2 border-secondary_1 border-b-transparent rounded-full mx-auto animate-spin"
+  ></div>`;
+
+    // replace setTimeout function with .then after the form has been submitted to google sheet API
+    setTimeout(() => {
+      swal({
+        title: "Successfully submitted",
+        icon: "success",
+        button: "Ok",
+      });
+      submitBtn.innerHTML = "join waitlist";
+      form.reset();
+    }, 1500);
   }
 });

@@ -63,7 +63,7 @@ input::placeholder {
   @apply w-64 text-center;
 }
 .footer div li {
-  @apply mb-3 capitalize text-secondary_2 font-light text-sm;
+  @apply mb-3 capitalize text-secondary_2 font-light text-sm hover:font-normal;
 }
 .footer-subtitle {
   @apply uppercase font-medium text-secondary_2 mb-2 text-base;
