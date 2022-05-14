@@ -11,7 +11,7 @@ function windowScroll() {
 }
 
 cta.addEventListener("click", () => {
-  // windowScroll();
+  windowScroll();
   swal({
     title: "working",
     icon: "success",

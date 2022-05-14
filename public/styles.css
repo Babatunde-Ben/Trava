@@ -506,8 +506,8 @@ html {
   top: 2rem;
 }
 
-.right-3{
-  right: 0.75rem;
+.right-4{
+  right: 1rem;
 }
 
 .top-10{
@@ -532,14 +532,6 @@ html {
 
 .left-1\/2{
   left: 50%;
-}
-
-.right-12{
-  right: 3rem;
-}
-
-.right-4{
-  right: 1rem;
 }
 
 .z-10{
@@ -615,6 +607,10 @@ html {
   width: 18rem;
 }
 
+.w-11\/12{
+  width: 91.666667%;
+}
+
 .w-4\/5{
   width: 80%;
 }
@@ -637,10 +633,6 @@ html {
 
 .w-32{
   width: 8rem;
-}
-
-.w-11\/12{
-  width: 91.666667%;
 }
 
 .max-w-xl{
@@ -772,9 +764,9 @@ html {
   line-height: 2.5rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xs{
@@ -792,14 +784,9 @@ html {
   line-height: 2rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -1045,17 +1032,17 @@ html {
 
 input::-moz-placeholder{
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 input:-ms-input-placeholder{
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 input::placeholder{
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .svg{
@@ -1170,14 +1157,14 @@ input::placeholder{
     line-height: 1;
   }
 
-  .sm\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:leading-\[4\.2rem\]{
