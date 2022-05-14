@@ -31,16 +31,17 @@ form.addEventListener("submit", (e) => {
   const email = form["email"];
 
   // form validation
+
   if (name.value == "") {
     name.classList.add("invalid");
-  } else {
+  } else if (!email.value.match(pattern) || email.value == "") {
     name.classList.remove("invalid");
-  }
-
-  if (!email.value.match(pattern) || email.value == "") {
     email.classList.add("invalid");
   } else {
+    name.classList.remove("invalid");
+
     email.classList.remove("invalid");
+
     swal({
       title: "Successfully submitted",
       icon: "success",
