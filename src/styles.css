@@ -35,15 +35,15 @@
   @apply w-full h-full object-cover;
 }
 .cards .subtitle {
-  @apply text-lg font-bold text-secondary_1 mb-2 text-center md:text-left;
+  @apply text-lg font-semibold text-secondary_1 mb-2 text-center md:text-left md:text-xl;
 }
 
 .cards .desc {
-  @apply text-secondary_2 mb-2 text-center leading-relaxed text-xs md:text-left md:text-sm md:leading-relaxed;
+  @apply text-secondary_2 mb-2 text-center leading-relaxed text-sm md:text-left md:text-base md:leading-relaxed;
 }
 
 .cards .btn {
-  @apply font-semibold text-secondary_1 capitalize text-center mx-auto text-sm cursor-pointer inline-block relative left-1/2 -translate-x-1/2 md:static md:text-left md:translate-x-0;
+  @apply font-semibold text-secondary_1 capitalize text-center mx-auto text-sm cursor-pointer inline-block relative left-1/2 -translate-x-1/2 md:static md:text-left md:translate-x-0 md:text-base;
 }
 
 .input {
