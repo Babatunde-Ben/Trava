@@ -567,8 +567,8 @@ html {
   margin-right: auto;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
+.mb-1{
+  margin-bottom: 0.25rem;
 }
 
 .mr-4{
@@ -609,10 +609,6 @@ html {
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mb-1{
-  margin-bottom: 0.25rem;
 }
 
 .inline-block{
@@ -709,6 +705,10 @@ html {
 
 .w-32{
   width: 8rem;
+}
+
+.w-64{
+  width: 16rem;
 }
 
 .max-w-xl{
@@ -887,6 +887,21 @@ html {
   padding-right: 1.5rem;
 }
 
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1031,8 +1046,8 @@ html {
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -1049,8 +1064,6 @@ html {
     display: inline-flex;
     width: auto;
     padding: 0px;
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
@@ -1313,8 +1326,8 @@ input::placeholder{
     margin-bottom: 0px;
   }
 
-  .sm\:w-\[25rem\]{
-    width: 25rem;
+  .sm\:w-\[27rem\]{
+    width: 27rem;
   }
 
   .sm\:w-11\/12{
@@ -1323,10 +1336,6 @@ input::placeholder{
 
   .sm\:w-28{
     width: 7rem;
-  }
-
-  .sm\:w-\[27rem\]{
-    width: 27rem;
   }
 
   .sm\:-translate-y-5{
@@ -1348,11 +1357,6 @@ input::placeholder{
 
   .sm\:gap-7{
     gap: 1.75rem;
-  }
-
-  .sm\:bg-green-50{
-    --tw-bg-opacity: 1;
-    background-color: rgb(240 253 244 / var(--tw-bg-opacity));
   }
 
   .sm\:px-6{
@@ -1411,16 +1415,12 @@ input::placeholder{
     margin-top: 0px;
   }
 
-  .md\:w-\[30rem\]{
-    width: 30rem;
+  .md\:w-\[32rem\]{
+    width: 32rem;
   }
 
   .md\:w-48{
     width: 12rem;
-  }
-
-  .md\:w-\[32rem\]{
-    width: 32rem;
   }
 
   .md\:min-w-\[15rem\]{
@@ -1463,11 +1463,6 @@ input::placeholder{
 
   .md\:rounded-xl{
     border-radius: 0.75rem;
-  }
-
-  .md\:bg-red-50{
-    --tw-bg-opacity: 1;
-    background-color: rgb(254 242 242 / var(--tw-bg-opacity));
   }
 
   .md\:object-left{
@@ -1541,6 +1536,11 @@ input::placeholder{
     top: 11rem;
   }
 
+  .lg\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .lg\:mb-6{
     margin-bottom: 1.5rem;
   }
@@ -1585,8 +1585,8 @@ input::placeholder{
     width: auto;
   }
 
-  .lg\:w-\[30rem\]{
-    width: 30rem;
+  .lg\:w-\[32rem\]{
+    width: 32rem;
   }
 
   .lg\:w-96{
@@ -1595,10 +1595,6 @@ input::placeholder{
 
   .lg\:w-36{
     width: 9rem;
-  }
-
-  .lg\:w-\[32rem\]{
-    width: 32rem;
   }
 
   .lg\:min-w-\[22rem\]{

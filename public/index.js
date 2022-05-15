@@ -50,6 +50,8 @@ form.addEventListener("submit", (e) => {
   const submitBtn = form["submit"];
 
   // form validation
+  name.classList.remove("invalid");
+  email.classList.remove("invalid");
 
   if (name.value == "") {
     name.classList.add("invalid");
