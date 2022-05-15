@@ -1553,6 +1553,18 @@ input::placeholder{
     margin-top: 0px;
   }
 
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .lg\:mt-3{
+    margin-top: 0.75rem;
+  }
+
+  .lg\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .lg\:block{
     display: block;
   }
