@@ -21,7 +21,7 @@
 }
 
 .nav-links {
-  @apply lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-600 hover:text-[#1f2080] font-semibold mb-3 text-base;
+  @apply lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-600 hover:text-[#1f2080] font-semibold my-3 text-lg;
 }
 .main-padding {
   @apply px-4 sm:px-7 md:px-10 lg:px-16;

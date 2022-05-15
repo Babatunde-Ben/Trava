@@ -1,5 +1,6 @@
 const btn = document.querySelectorAll(".cards .btn");
-const cta = document.querySelector(" .cta");
+const cta = document.querySelectorAll(" .cta");
+const mobileNavLinks = document.querySelectorAll(" .mobile-nav-links");
 const form = document.querySelector(".waitlist-form");
 const waitlistSection = document.getElementById("waitlist");
 
@@ -10,13 +11,38 @@ function windowScroll() {
   });
 }
 
-cta.addEventListener("click", () => {
-  windowScroll();
+cta.forEach((item) => {
+  item.addEventListener("click", () => {
+    windowScroll();
+  });
 });
 btn.forEach((item) => {
   item.addEventListener("click", () => {
     windowScroll();
   });
+});
+mobileNavLinks.forEach((item) => {
+  item.addEventListener("click", () => {
+    topNav.classList.add("hidden");
+  });
+});
+
+// toggle navbar
+const closeBtn = document.getElementById("close-btn");
+const openBtn = document.getElementById("open-btn");
+const topNav = document.querySelector(".top-nav");
+
+console.log(closeBtn);
+console.log(openBtn);
+console.log(topNav);
+
+closeBtn.addEventListener("click", () => {
+  topNav.classList.toggle("hidden");
+  console.log(`close button clicked`);
+});
+openBtn.addEventListener("click", () => {
+  topNav.classList.toggle("hidden");
+  console.log(`open button clicked`);
 });
 
 // Regex for validation
@@ -56,22 +82,4 @@ form.addEventListener("submit", (e) => {
       form.reset();
     }, 1500);
   }
-});
-
-// toggle navbar
-const closeBtn = document.getElementById("close-btn");
-const openBtn = document.getElementById("open-btn");
-const topNav = document.querySelector(".top-nav");
-
-console.log(closeBtn);
-console.log(openBtn);
-console.log(topNav);
-
-closeBtn.addEventListener("click", () => {
-  topNav.classList.toggle("hidden");
-  console.log(`close button clicked`);
-});
-openBtn.addEventListener("click", () => {
-  topNav.classList.toggle("hidden");
-  console.log(`open button clicked`);
 });

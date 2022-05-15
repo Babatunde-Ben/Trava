@@ -11,11 +11,10 @@
       type="image/x-icon"
       href="./images/svgs/Trava-logo-icon.svg"
     />
-
     <title>Trava</title>
   </head>
   <body class="font-Montserrat">
-    <header id="home" class="relative w-full p-3">
+    <header id="home" class="relative w-full p-3 mb-2 sm:px-6 lg:px-7">
       <nav class="flex items-center flex-wrap">
         <a href="#" class="mr-4 inline-flex">
           <img
@@ -25,7 +24,7 @@
           />
         </a>
         <button
-          class="inline-flex p-2 cursor-pointer hover:bg-gray-500 lg:hidden ml-auto nav-toggler"
+          class="inline-flex p-2 cursor-pointer lg:hidden ml-auto nav-toggler"
           id="open-btn"
         >
           <svg
@@ -48,15 +47,19 @@
           id="navigation"
         >
           <div
-            class="absolute right-7 top-6 w-72 px-4 py-6 bg-primary rounded-md flex flex-col lg:inline-flex lg:flex-row lg:ml-auto lg:static lg:bg-transparent"
+            class="absolute right-4 top-5 sm:top-6 w-72 px-4 py-10 bg-primary rounded-lg flex flex-col lg:inline-flex lg:flex-row lg:ml-auto lg:static lg:bg-transparent"
           >
-            <a href="#" class="nav-links"><span>Home</span></a>
-            <a href="#" class="nav-links"><span>Features</span></a>
-            <hr class="lg:hidden w-full mx-auto inline-block" />
+            <a href="#home" class="nav-links mobile-nav-links"
+              ><span>Home</span></a
+            >
+            <a href="#features" class="nav-links mobile-nav-links"
+              ><span>Features</span></a
+            >
+            <hr class="lg:hidden mt-4 w-full mx-auto inline-block" />
             <button class="absolute top-5 right-5 p-2 lg:hidden" id="close-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                class="h-6 w-6"
                 viewBox="0 0 20 20"
                 fill="#4b5563"
               >
@@ -68,7 +71,7 @@
               </svg>
             </button>
             <button
-              class="cta outline-none border-none py-3 px-0 mt-6 inline-block bg-secondary_1 text-primary rounded-md font-semibold uppercase text-center text-xs md:text-sm md:px-0 shadow-md hover:shadow-lg"
+              class="cta outline-none border-none py-3 px-0 mt-6 inline-block bg-secondary_1 text-primary rounded-md font-semibold uppercase text-center text-xs md:text-sm md:px-0 shadow-md hover:shadow-lg mobile-nav-links"
             >
               Join waitlist
             </button>
@@ -78,7 +81,7 @@
 
       <img
         src="./images/svgs/blob.svg"
-        class="absolute -top-2 -left-7 w-72 sm:w-[25rem] sm:-top-10 sm:-left-5 md:w-[30rem] lg:w-[30rem] -z-10"
+        class="absolute -top-1 -left-7 w-80 sm:w-[25rem] sm:-top-10 sm:-left-5 md:w-[30rem] lg:w-[30rem] -z-10"
       />
     </header>
     <main class="sm:bg-green-50 md:bg-red-50 lg:bg-transparent">
