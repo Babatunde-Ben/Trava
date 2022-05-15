@@ -32,17 +32,11 @@ const closeBtn = document.getElementById("close-btn");
 const openBtn = document.getElementById("open-btn");
 const topNav = document.querySelector(".top-nav");
 
-console.log(closeBtn);
-console.log(openBtn);
-console.log(topNav);
-
 closeBtn.addEventListener("click", () => {
   topNav.classList.toggle("hidden");
-  console.log(`close button clicked`);
 });
 openBtn.addEventListener("click", () => {
   topNav.classList.toggle("hidden");
-  console.log(`open button clicked`);
 });
 
 // Regex for validation
