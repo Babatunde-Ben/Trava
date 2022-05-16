@@ -99,8 +99,9 @@ form.addEventListener("submit", (e) => {
         console.log(`error submitting`);
         submitBtn.innerHTML = "join waitlist";
         swal({
-          title: "Try again",
-          icon: "warning",
+          title: "Error Occured",
+          text: "Try again",
+          icon: "error",
           button: "Ok",
         });
       });
