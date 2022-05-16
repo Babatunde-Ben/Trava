@@ -1,3 +1,8 @@
+AOS.init({
+  duration: 600,
+  delay: 100,
+});
+
 const btn = document.querySelectorAll(".cards .btn");
 const cta = document.querySelectorAll(" .cta");
 const mobileNavLinks = document.querySelectorAll(" .mobile-nav-links");

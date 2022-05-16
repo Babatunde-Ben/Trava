@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="shortcut icon"
@@ -101,7 +102,10 @@
       <section
         class="main-padding mb-5 hero-section flex flex-col gap-y-9 relative py-7 md:flex-row md:gap-x-3 justify-center"
       >
-        <article class="max-w-xl lg:max-w-3xl text-center sm:text-left">
+        <article
+          data-aos="fade-in"
+          class="max-w-xl lg:max-w-3xl text-center sm:text-left"
+        >
           <h1
             class="text-secondary_1 text-4xl leading-[3.2rem] font-extrabold mb-4 sm:text-5xl sm:leading-[4.2rem] sm:mb-5 md:text-6xl md:leading-[4.7rem]"
           >
@@ -123,6 +127,7 @@
           </button>
         </article>
         <div
+          data-aos="fade-in"
           class="w-4/5 h-80 mx-auto custom-shadow 0 rounded-2xl relative md:min-w-[15rem] md:mx-0 md:my-auto overflow-hidden lg:h-96 lg:w-96 lg:min-w-[22rem]"
         >
           <img
@@ -147,7 +152,7 @@
         <div
           class="flex flex-col gap-y-14 px-5 justify-center items-center sm:flex-row sm:flex-wrap sm:items-start md:justify-center md:flex-nowrap md:px-0 sm:gap-7 md:gap-2 lg:gap-7 lg:px-6"
         >
-          <div class="cards">
+          <div class="cards" data-aos="fade-in">
             <div class="">
               <img
                 src="./images/Trava-benefits-1.jpg"
@@ -164,7 +169,7 @@
             </p>
             <p class="btn">learn more <span class="arrow"></span></p>
           </div>
-          <div class="cards md:mt-12">
+          <div class="cards md:mt-12" data-aos="fade-in">
             <div class="">
               <img
                 src="./images/Trava-benefits-2.jpg"
@@ -179,7 +184,7 @@
             </p>
             <p class="btn">learn more <span class="arrow"></span></p>
           </div>
-          <div class="cards md:mt-24">
+          <div class="cards md:mt-24" data-aos="fade-in">
             <div class="">
               <img
                 src="./images/Trava-benefits-3.jpg"
@@ -202,6 +207,7 @@
       <!-- waitlist section -->
       <section
         id="waitlist"
+        data-aos="fade-in"
         class="waitlist main-padding relative bg-secondary_1 py-24"
       >
         <img
@@ -305,6 +311,7 @@
       </p>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7.1.0/dist/promise.min.js"></script>
     <script src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
