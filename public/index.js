@@ -46,23 +46,34 @@ let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const name = form.querySelector(".name-input");
+  const nameLabel = form.querySelector(".name-input-label");
+  const nameError = form.querySelector(".name-input-error");
   const email = form.querySelector(".email-input");
+  const emailLabel = form.querySelector(".email-input-label");
+  const emailError = form.querySelector(".email-input-error");
   const submitBtn = form["submit"];
 
   // form validation
-  name.classList.remove("invalid");
-  email.classList.remove("invalid");
+  nameLabel.classList.remove("invalid");
+  emailLabel.classList.remove("invalid");
 
   if (name.value == "") {
-    name.classList.add("invalid");
+    nameLabel.classList.add("invalid");
     name.focus();
+    nameError.textContent = "Enter first name";
   } else if (!email.value.match(pattern) || email.value == "") {
-    name.classList.remove("invalid");
-    email.classList.add("invalid");
+    nameError.textContent = "";
+
+    nameLabel.classList.remove("invalid");
+    emailLabel.classList.add("invalid");
     email.focus();
+    emailError.textContent = "Enter valid email address";
   } else {
-    name.classList.remove("invalid");
-    email.classList.remove("invalid");
+    emailError.textContent = "";
+    nameError.textContent = "";
+
+    nameLabel.classList.remove("invalid");
+    emailLabel.classList.remove("invalid");
 
     // set preloader
     submitBtn.innerHTML = `<div

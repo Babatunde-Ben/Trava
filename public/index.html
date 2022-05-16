@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#17123b" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="./images/svgs/Trava-logo-icon.svg"
     />
+
     <title>Trava</title>
   </head>
   <body class="font-Montserrat">
@@ -74,7 +82,7 @@
               </svg>
             </button>
             <button
-              class="cta outline-none border-none py-3 px-5 mt-6 mb-3 inline-block bg-secondary_1 text-primary rounded-md font-semibold uppercase text-center text-xs md:text-sm shadow-md hover:shadow-lg mobile-nav-links lg:my-0 lg:block lg:ml-auto"
+              class="cta outline-none border-none py-3 px-5 mt-6 mb-3 inline-block bg-secondary_1 text-primary rounded-md font-semibold uppercase text-center text-xs md:text-sm shadow-md hover:shadow-lg mobile-nav-links lg:my-0 lg:block lg:ml-auto hover:bg-[#241d54]"
             >
               Join waitlist
             </button>
@@ -109,7 +117,7 @@
             serving as drop-off and pickup points.
           </h3>
           <button
-            class="cta outline-none border-none py-3 px-5 bg-secondary_1 text-primary rounded-md font-semibold uppercase text-center text-xs md:text-base md:px-6 md:rounded-xl shadow-md hover:shadow-lg"
+            class="cta outline-none border-none py-3 px-5 bg-secondary_1 text-primary rounded-md font-semibold uppercase text-center text-xs md:text-base md:px-6 md:rounded-xl shadow-md hover:shadow-lg hover:bg-[#241d54]"
           >
             Join Waitlist
           </button>
@@ -209,7 +217,7 @@
         <img
           src="./images//svgs/circles.svg"
           alt=""
-          class="svg w-20 left-4 bottom-10 rotate-[25deg] lg:bottom-0 lg:top-44 sm:left-12"
+          class="svg w-20 left-4 bottom-10 rotate-[25deg] lg:bottom-0 lg:top-44 sm:left-12 md:w-12 lg:w-20"
         />
         <img
           src="./images//svgs/circles.svg"
@@ -229,18 +237,29 @@
           class="waitlist-form flex flex-col gap-6 justify-center items-center md:flex-row"
           novalidate
         >
-          <input
-            type="text"
-            name="data[name]"
-            placeholder="First name"
-            class="input name-input"
-          />
-          <input
-            type="email"
-            name="data[email]"
-            placeholder="Email address"
-            class="input email-input"
-          />
+          <label class="label name-input-label">
+            <!-- <i class="input-icon">c</i> -->
+            <i class="fa-regular fa-user input-icon"></i>
+            <input
+              type="text"
+              name="data[name]"
+              placeholder="First name"
+              class="name-input"
+            />
+            <p class="error-message name-input-error"></p>
+          </label>
+          <label class="label email-input-label">
+            <!-- <i class="input-icon">c</i> -->
+            <i class="fa-regular fa-envelope input-icon"></i>
+
+            <input
+              type="email"
+              name="data[email]"
+              placeholder="Email address"
+              class="email-input"
+            />
+            <p class="error-message email-input-error"></p>
+          </label>
 
           <button
             name="submit"
