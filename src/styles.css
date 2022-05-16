@@ -68,7 +68,7 @@
   @apply border border-red-400;
 }
 input::placeholder {
-  @apply text-gray-400;
+  @apply text-gray-500;
 }
 .svg {
   @apply absolute;

@@ -1,6 +1,8 @@
+// animation on scroll
 AOS.init({
-  duration: 600,
-  delay: 100,
+  duration: 500,
+  delay: 50,
+  offset: 60,
 });
 
 const btn = document.querySelectorAll(".cards .btn");
