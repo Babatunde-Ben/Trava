@@ -224,32 +224,30 @@
         </h4>
 
         <form
-          action=""
+          action="https://sheetdb.io/api/v1/5alb21smtrjrl"
+          method="post"
           class="waitlist-form flex flex-col gap-6 justify-center items-center md:flex-row"
           novalidate
         >
           <input
             type="text"
-            name="name"
+            name="data[name]"
             placeholder="First name"
-            class="input"
+            class="input name-input"
           />
           <input
             type="email"
-            name="email"
+            name="data[email]"
             placeholder="Email address"
-            class="input"
+            class="input email-input"
           />
 
           <button
             name="submit"
             type="submit"
-            class="bg-white w-40 h-10 mt-2 px-6 outline-none border-none font-bold capitalize text-secondary_1 text-base rounded-md transition duration-300 md:w-48 md:mt-0"
+            class="bg-white w-40 h-10 mt-2 px-6 outline-none border-none font-bold capitalize text-secondary_1 text-base rounded-md transition duration-300 md:w-48 md:mt-0 hover:bg-[#edeef2]"
           >
             join waitlist
-            <!-- <div
-              class="w-5 h-5 border-2 border-secondary_2 border-b-transparent rounded-full mx-auto animate-spin"
-            ></div> -->
           </button>
         </form>
       </section>

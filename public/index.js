@@ -45,8 +45,8 @@ let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 // actions on form submit
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const name = form["name"];
-  const email = form["email"];
+  const name = form.querySelector(".name-input");
+  const email = form.querySelector(".email-input");
   const submitBtn = form["submit"];
 
   // form validation
@@ -55,27 +55,43 @@ form.addEventListener("submit", (e) => {
 
   if (name.value == "") {
     name.classList.add("invalid");
+    name.focus();
   } else if (!email.value.match(pattern) || email.value == "") {
     name.classList.remove("invalid");
     email.classList.add("invalid");
+    email.focus();
   } else {
     name.classList.remove("invalid");
-
     email.classList.remove("invalid");
 
+    // set preloader
     submitBtn.innerHTML = `<div
     class="w-5 h-5 border-2 border-secondary_1 border-b-transparent rounded-full mx-auto animate-spin"
   ></div>`;
 
-    // replace setTimeout function with .then after the form has been submitted to google sheet API
-    setTimeout(() => {
-      swal({
-        title: "Successfully submitted",
-        icon: "success",
-        button: "Ok",
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        console.log(`form submitted`);
+        swal({
+          title: "Successfully submitted",
+          icon: "success",
+          button: "Ok",
+        });
+        submitBtn.innerHTML = "join waitlist";
+        form.reset();
+      })
+      .catch((e) => {
+        console.log(`error submitting`);
+        submitBtn.innerHTML = "join waitlist";
+        swal({
+          title: "Try again",
+          icon: "warning",
+          button: "Ok",
+        });
       });
-      submitBtn.innerHTML = "join waitlist";
-      form.reset();
-    }, 1500);
   }
 });
