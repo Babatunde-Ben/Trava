@@ -1,10 +1,3 @@
-// animation on scroll
-AOS.init({
-  duration: 500,
-  delay: 50,
-  offset: 60,
-});
-
 const btn = document.querySelectorAll(".cards .btn");
 const cta = document.querySelectorAll(" .cta");
 const mobileNavLinks = document.querySelectorAll(" .mobile-nav-links");
@@ -113,4 +106,11 @@ form.addEventListener("submit", (e) => {
         });
       });
   }
+});
+
+// animation on scroll
+AOS.init({
+  duration: 500,
+  delay: 50,
+  offset: 60,
 });
