@@ -80,31 +80,13 @@ form.addEventListener("submit", (e) => {
     class="w-5 h-5 border-2 border-secondary_1 border-b-transparent rounded-full mx-auto animate-spin"
   ></div>`;
 
-    fetch(form.action, {
-      method: "POST",
-      body: new FormData(form),
-    })
-      .then((response) => response.json())
-      .then(() => {
-        console.log(`form submitted`);
-        swal({
-          title: "Successfully submitted",
-          icon: "success",
-          button: "Ok",
-        });
-        submitBtn.innerHTML = "join waitlist";
-        form.reset();
-      })
-      .catch((e) => {
-        console.log(`error submitting`);
-        submitBtn.innerHTML = "join waitlist";
-        swal({
-          title: "Error Occured",
-          text: "Try again",
-          icon: "error",
-          button: "Ok",
-        });
-      });
+    swal({
+      title: "Successfully submitted",
+      icon: "success",
+      button: "Ok",
+    });
+    submitBtn.innerHTML = "join waitlist";
+    form.reset();
   }
 });
 
