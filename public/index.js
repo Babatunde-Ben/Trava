@@ -80,13 +80,15 @@ form.addEventListener("submit", (e) => {
     class="w-5 h-5 border-2 border-secondary_1 border-b-transparent rounded-full mx-auto animate-spin"
   ></div>`;
 
-    swal({
-      title: "Successfully submitted",
-      icon: "success",
-      button: "Ok",
-    });
-    submitBtn.innerHTML = "join waitlist";
-    form.reset();
+    setTimeout(() => {
+      swal({
+        title: "Successfully submitted",
+        icon: "success",
+        button: "Ok",
+      });
+      submitBtn.innerHTML = "join waitlist";
+      form.reset();
+    }, 1000);
   }
 });
 
