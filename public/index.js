@@ -92,6 +92,10 @@ form.addEventListener("submit", (e) => {
   }
 });
 
+//  update copyright
+const footerYear = document.querySelector(".footer-year");
+footerYear.textContent = new Date().getFullYear();
+
 // animation on scroll
 AOS.init({
   duration: 500,
